@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. 先下载并运行 [车辆管理系统后台](https://github.com/galenjx/carmanagerservice)
 
-2. 在项目目录安装依赖并启动服务 ：cnpm i 
+2. 在下载该项目并安装依赖 ：cnpm i 
 
 3. 运行车辆管理系统：ng serve --open
 
