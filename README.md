@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
+## 使用
+
+1. 先下载并运行 [车辆管理系统后台](https://github.com/galenjx/carmanagerservice)
+
+2. 在项目目录安装依赖并启动服务 ：cnpm i 
+
+3. 运行车辆管理系统：ng serve --open
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
