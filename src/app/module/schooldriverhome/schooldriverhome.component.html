@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard &laquo; Admin</title>
+</head>
+<body>
+  <div class="main">
+    <nav class="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a [routerLink]="['/logres']" (click) = 'dologout()'><i class="fa fa-sign-out"></i>退出</a></li>
+      </ul>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="aside">
+    <div class="profile">
+      <img class="avatar" src="../../../assets/img/default.png">
+      <h3 class="name">公车驾驶员</h3>
+    </div>
+    <ul class="nav">
+      <li>
+      <!-- <li class="active"> -->
+        <a [routerLink]="['/schooldriverhome/editpersonalmes']" [queryParams]="{phonenumber:queryParams.phonenumber,name:queryParams.name}" routerLinkActive="router-link-active" >我的资料</a>
+      </li>
+      <li>
+        <a [routerLink]="['/schooldriverhome/apply']" [queryParams]="{phonenumber:queryParams.phonenumber,name:queryParams.name}" routerLinkActive="router-link-active" >我的申请</a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

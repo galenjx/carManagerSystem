@@ -1,0 +1,22 @@
+@import "../../../assets/css/admin.css";
+@import "../../../assets/vendors/bootstrap/css/bootstrap.css";
+// .login[_ngcontent-kui-c19] {
+//     top: -8px;
+// }
+.login {
+    width: 101%;
+    height: 101%;
+    top: -8px;
+    left: -8px;
+}
+.message {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    // padding-bottom: 0;
+    // border: 1px solid #d8dee2;
+    border-radius: 5px;
+    a{
+        width: 130px;
+    }
+  }

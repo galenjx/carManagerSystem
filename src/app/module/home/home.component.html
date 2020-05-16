@@ -1,0 +1,45 @@
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+      <meta charset="utf-8">
+      <title>Dashboard &laquo; Admin</title>
+    </head>
+    <body>
+      <div class="main">
+        <nav class="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a [routerLink]="['/logres']" (click) = 'dologout()'><i class="fa fa-sign-out"></i>退出</a></li>
+          </ul>
+        </nav>
+        <router-outlet></router-outlet>
+      </div>
+    
+      <div class="aside">
+        <div class="profile">
+          <img class="avatar" src="../../../assets/img/default.png">
+          <h3 class="name">管理员</h3>
+        </div>
+        <ul class="nav">
+          <li>
+          <!-- <li class="active"> -->
+            <a [routerLink]="['/home/cardata']" routerLinkActive="router-link-active" >车辆实时数据</a>
+          </li>
+          <li>
+            <a [routerLink]="['/home/uncar']" routerLinkActive="router-link-active" >代处理车辆</a>
+          </li>
+          <li>
+            <a [routerLink]="['/home/mancar']" routerLinkActive="router-link-active" >所有车辆</a>
+          </li>
+          <li>
+            <a [routerLink]="['/home/addcar']" routerLinkActive="router-link-active" >添加车辆</a>
+          </li>
+          <li>
+            <a [routerLink]="['/home/search']" routerLinkActive="router-link-active" >检索车辆</a>
+          </li>
+          <li>
+            <a [routerLink]="['/home/setting']" routerLinkActive="router-link-active" >设置</a>
+          </li>
+        </ul>
+      </div>
+    </body>
+    </html>

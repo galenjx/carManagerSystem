@@ -1,0 +1,9 @@
+@import "../../../../../assets/vendors/bootstrap/css/bootstrap.css";
+@import "../../../../../assets/css/admin.css";
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+  }

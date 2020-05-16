@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">校园车辆实时统计统计：</h3>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let item of mancardata">{{item.name}}（共<strong>{{item.count}}/{{item.num}}</strong>辆车）<strong [hidden]="!item.flag">该区域车辆拥堵，请及时关注！！</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-8"></div>
+    <div class="col-md-8"></div>
+  </div>
+</div>
